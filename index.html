@@ -102,8 +102,9 @@
           <i class="fa-solid fa-envelope"></i></a></li>
     </ul>
 </div>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark ftco-navbar-light fixed-top" id="ftco-navbar">
-  <div class="container">
+      <!-- Navbar starts -->
+
+<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">  <div class="container">
       <!-- Logo with proper spacing -->
       <a class="navbar-brand d-flex align-items-center" href="index.html">
           <img src="images/RDlogo-removebg-preview.png" alt="Refined Dentistry Logo" class="logo-img mr-2">
@@ -117,8 +118,8 @@
       </button>
 
       <!-- Navbar Links -->
-      <div class="collapse navbar-collapse" id="ftco-nav">
-          <ul class="navbar-nav ml-auto">
+      <div class="collapse navbar-collapse justify-content-end" id="ftco-nav">
+        <ul class="navbar-nav ml-auto">
               <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
               <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
               <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
@@ -132,6 +133,19 @@
       </div>
   </div>
 </nav>
+      <!-- Navbar Ends -->
+
+
+
+<!-- Fixed Action Buttons -->
+<div class="action-buttons">
+  <a href="tel:+919370582288" class="call-button" target="_blank" title="Call Now">
+      <i class="fa-solid fa-phone"></i>
+  </a>
+  <a href="https://wa.me/919370582288" class="whatsapp-button" target="_blank" title="WhatsApp Now">
+      <i class="fa-brands fa-whatsapp"></i>
+  </a>
+</div>
 
 <section class="home-slider owl-carousel">
   <div class="slider-item" style="background-image:url('images/ClinicPic1.jpg')">
@@ -351,7 +365,7 @@
         <p>We offer professional and affordable dental treatments at Refined Dentistry to keep your smile healthy and beautiful.</p>
       </div>
     </div>
-
+</div>
     <!-- Services Row -->
     <div class="row d-flex flex-wrap justify-content-center">
       
@@ -516,8 +530,11 @@
     }
   }
 </script>
-
-
+<div class="container">
+<div class="map">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3780.3996814472543!2d73.8774245!3d18.457854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4b1bd4ef7f3ea625%3A0x3110077164a8792c!2sREFINED%20DENTISTRY%20%7C%20BEST%20DENTAL%20CLINIC%20%7C%20PUNE!5e0!3m2!1sen!2sin!4v1711955678901!5m2!1sen!2sin" width="100%" height="400" style="border:0;" allowfullscreen loading="lazy"></iframe>
+</div>
+</div>
 
 
 <section class="ftco-section bg-light">
@@ -858,7 +875,6 @@
 
 <script src=js/jquery.min.js></script>
 <script src=js/jquery-migrate-3.0.1.min.js></script>
-<script src=js/popper.min.js></script>
 <script src=js/bootstrap.min.js></script>
 <script src=js/jquery.easing.1.3.js></script>
 <script src=js/jquery.waypoints.min.js></script>
@@ -866,11 +882,9 @@
 <script src=js/owl.carousel.min.js></script>
 <script src=js/jquery.magnific-popup.min.js></script>
 <script src=js/aos.js></script>
-<script src=js/jquery.animateNumber.min.js></script>
-<script src=js/bootstrap-datepicker.js></script>
-<script src=js/jquery.timepicker.min.js></script>
 <script src=js/scrollax.min.js></script>
-<script src=js/google-map.js></script>
 <script src=js/main.js></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+
 </body>
 </html>
