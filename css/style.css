@@ -190,37 +190,30 @@
   color: #666;
 }
 /* Common Container Styles for Testimonials & Cases */
-.testimony-wrap{
-  width: 100%;             /* Fills parent width */
-    height: 250px;           /* Fixed height for uniform display */
-    background-color: #fff;  /* Letterbox color (optional) */
-    overflow: hidden;        /* Ensures the container doesn't exceed set height */
-    display: flex;           /* Center the image if needed */
-    justify-content: center; 
-    align-items: center;
-}
-.case-wrap {
+.testimony-wrap {
   width: 100%;
-  height: 250px;           /* Fixed height for uniform display */
-
-  /* Use a fixed or min-height if you really need it */
-  /* min-height: 200px; */
-  /* height: 200px; */
-
+  height: 250px;
   background-color: #fff;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  /* Make it a vertical flex container */
+.case-wrap {
+  width: 250px;        /* fixed width for horizontal scroll */
+  min-width: 250px;
+  background-color: #fff;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
-  /* Align items horizontally center */
   align-items: center;
-  /* Adjust vertical alignment:
-     - 'flex-start' from the top
-     - 'center' for perfect vertical centering
-  */
   justify-content: flex-start;
-  padding: 1rem; /* Add spacing if needed */
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  margin-right: 1rem;
+  height: auto;
 }
 
 /* Text Styling for Testimonials */
@@ -229,38 +222,51 @@
   color: #050505;
 }
 
-/* Testimonial Images - Centering & Sizing */
+/* Testimonial Images */
 .testimony-img img {
   display: block;
   margin: 0 auto;
-  object-fit: cover;      /* or contain if you want full image without cropping */
+  object-fit: cover;
   object-position: center;
-  border-radius: 50%;     /* if you want circular images */
-  width: 80px;            /* Adjust as needed */
-  height: 80px;           /* Adjust as needed */
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
 }
 
 /* Recent Cases Images */
-  .case-wrap img {
-    width: 1200px;
-    height: 180px;
-    object-fit: contain;    /* or 'contain' to avoid cropping */
-    object-position: center;
-    border-radius: 5px;
-  }
-   
-  
+.img-recent {
+  width: 100%;
+  height: ;            /* Full screen height */
+  object-fit: fill;        /* Cover entire container */
+  object-position: center;  /* Center the image */
+}
+
+
+/* Scrollable carousel container */
+.scrollable-carousel {
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 1rem;
+  scroll-behavior: smooth;
+}
+
+/* Inline flex for cases to sit horizontally */
+.cases-carousel {
+  display: inline-flex;
+  gap: 1rem;
+}
 
 /* "Read More" Link */
 .read-more {
-  color: #007bff;         /* Blue link color */
+  color: #007bff;
   cursor: pointer;
   font-weight: 500;
-  text-decoration: none;  /* Remove underline (optional) */
-    display: block;     /* Moves link to its own line */  
-  
+  text-decoration: none;
+  display: block;
+  margin-top: 0.5rem;
 }
-
 
 .instant-appointment {
     padding: 5px 10px;
@@ -632,9 +638,6 @@
    .blockquote-footer::before {
      content: "\2014 \00A0"; }
  
- .img-fluid {
-   max-width: 100%;
-   height: auto; }
  
  .img-thumbnail {
    padding: 0.25rem;
